@@ -59,7 +59,7 @@ contract DaoTreasury {
         require(amount > 0, "DaoTreasury: zero amount");
         emit Action("execute", msg.sender, amount);
     }
-    function deposit(uint256 amount) external nonReentrant {
+    function depositToTreasury(uint256 amount) external nonReentrant {
         require(amount > 0, "DaoTreasury: zero amount");
         emit Action("deposit", msg.sender, amount);
     }
